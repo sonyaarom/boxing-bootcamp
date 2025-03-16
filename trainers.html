@@ -1,130 +1,229 @@
-<!-- Заголовок страницы -->
-<section class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Наши тренеры</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Тренеры</li>
-                    </ol>
-                </nav>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши тренеры - Нокаут Лагерь</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">НОКАУТ</span> ЛАГЕРЬ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Классы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Расписание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="trainers.html">Тренеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Секция тренеров -->
-<section class="py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">Познакомьтесь с нашими экспертными тренерами</h2>
-                <p class="lead">Наша команда профессиональных боксеров и сертифицированных фитнес-тренеров посвящена помощи вам в достижении ваших целей.</p>
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Наши тренеры</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Тренеры</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
         </div>
-        
-        <div class="row">
-            {% for trainer in trainers %}
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card trainer-card h-100">
-                    <img src="img/mike.jpg" class="card-img-top" alt="{{ trainer.name }}">
-                    <div class="card-body">
-                        <h4 class="card-title">{{ trainer.name }}</h4>
-                        <h6 class="card-subtitle mb-3 text-muted">{{ trainer.title }}</h6>
-                        <p class="card-text">{{ trainer.bio }}</p>
-                        <div class="trainer-social mt-3">
-                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </section>
+
+    <!-- Секция тренеров -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Познакомьтесь с нашими экспертными тренерами</h2>
+                    <p class="lead">Наша команда профессиональных боксеров и сертифицированных фитнес-тренеров посвящена помощи вам в достижении ваших целей.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Тренер 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card trainer-card h-100">
+                        <img src="img/mike.jpg" class="card-img-top" alt="Слава Супер">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Слава Супер</h4>
+                            <h6 class="card-subtitle mb-3 text-muted">Главный тренер</h6>
+                            <p class="card-text"> Соболев, но не тот. Он и не Николай, и не тот маленький комик. Боксер с двухмесячным стажем. Специализируется на технике и стратегии бокса. Опытный сквиртолог. Научит вас боксировать как настоящий боец и скиртовать как настоящий сквиртер. Он и не боксер, но он боксер. И он еще боксер. И сквиртер.</p>
+                            <div class="social-icons">
+                                <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Секция почему наши тренеры -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">Почему наши тренеры лучшие</h2>
-                <p class="lead">Наши тренеры отличаются своим опытом, знаниями и страстью к боксу.</p>
+    <!-- Секция "Почему наши тренеры лучшие" -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Почему наши тренеры лучшие</h2>
+                    <p class="lead">Наши тренеры отличаются своим опытом, знаниями и страстью к боксу.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>Опыт соревнований</h4>
+                            <p>Наши тренеры имеют реальный опыт боксерских соревнований, от любительских до профессиональных уровней.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Сертифицированные профессионалы</h4>
+                            <p>Все наши тренеры имеют сертификаты в боксе, фитнесе и персональных тренировках.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-cog"></i>
+                            </div>
+                            <h4>Индивидуальный подход</h4>
+                            <p>Наши тренеры адаптируют свои методы обучения к вашему уникальному стилю обучения и целям.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Обучены безопасности</h4>
+                            <p>Наша команда сертифицирована по СЛР и первой помощи, обеспечивая безопасную тренировочную среду для всех участников.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>Непрерывное образование</h4>
+                            <p>Мы инвестируем в непрерывное образование для наших тренеров, чтобы они оставались на переднем крае бокса и фитнеса.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="d-flex">
-                    <div class="feature-icon me-4">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <div>
-                        <h4>Опыт соревнований</h4>
-                        <p>Наши тренеры имеют реальный опыт боксерских соревнований, от любительских до профессиональных уровней.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="d-flex">
-                    <div class="feature-icon me-4">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div>
-                        <h4>Сертифицированные профессионалы</h4>
-                        <p>Все наши тренеры имеют сертификаты в боксе, фитнесе и персональных тренировках.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="d-flex">
-                    <div class="feature-icon me-4">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <div>
-                        <h4>Индивидуальный подход</h4>
-                        <p>Наши тренеры адаптируют свои методы обучения к вашему уникальному стилю обучения и целям.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="d-flex">
-                    <div class="feature-icon me-4">
-                        <i class="fas fa-first-aid"></i>
-                    </div>
-                    <div>
-                        <h4>Обучены безопасности</h4>
-                        <p>Наша команда сертифицирована по СЛР и первой помощи, обеспечивая безопасную тренировочную среду для всех участников.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="d-flex">
-                    <div class="feature-icon me-4">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div>
-                        <h4>Непрерывное образование</h4>
-                        <p>Мы инвестируем в непрерывное образование для наших тренеров, чтобы они оставались на переднем крае бокса и фитнеса.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Секция призыва к действию -->
-<section class="py-5 cta">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center text-white">
-                <h2 class="mb-4">Тренируйтесь с лучшими</h2>
-                <p class="lead mb-5">Забронируйте сессию с одним из наших экспертных тренеров и поднимите свои боксерские навыки на новый уровень.</p>
-                <a href="contact.html" class="btn btn-light btn-lg">Свяжитесь с нами сегодня</a>
+    <!-- Секция призыва к действию -->
+    <section class="py-5 cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="mb-4">Тренируйтесь с лучшими</h2>
+                    <p class="lead mb-5">Забронируйте сессию с одним из наших экспертных тренеров и поднимите свои боксерские навыки на новый уровень.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg">Свяжитесь с нами сегодня</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Нокаут Лагерь</h5>
+                    <p>Трансформируйте свое тело и разум через дисциплину бокса. Присоединяйтесь к нашему сообществу бойцов сегодня!</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Часы работы</h5>
+                    <ul class="list-unstyled">
+                        <li>Понедельник - Пятница: 6:00 - 22:00</li>
+                        <li>Суббота: 8:00 - 20:00</li>
+                        <li>Воскресенье: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4">Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Невский проспект 123, Санкт-Петербург, 190000</li>
+                        <li><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@нокаутлагерь.рф</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Нокаут Лагерь. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                    <a href="#" class="text-white me-3">Условия использования</a>
+                    <a href="#" class="text-white">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

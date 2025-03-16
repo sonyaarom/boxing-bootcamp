@@ -1,189 +1,291 @@
-
-<!-- Page Header -->
-<section class="page-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Class Schedule</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="base.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Schedule</li>
-                    </ol>
-                </nav>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание - Нокаут Лагерь</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold">НОКАУТ</span> ЛАГЕРЬ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Классы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="schedule.html">Расписание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trainers.html">Тренеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Schedule Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">Weekly Class Schedule</h2>
-                <p class="lead">Find the perfect time to fit boxing into your busy schedule.</p>
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Расписание занятий</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Расписание</li>
+                        </ol>
+                    </nav>
+                </div>
             </div>
         </div>
-        
-        <div class="table-responsive">
-            <table class="table table-bordered schedule-table">
-                <thead>
-                    <tr>
-                        <th width="100">Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
-                        <th>Saturday</th>
-                        <th>Sunday</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="class-time">6:00 AM</td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Boxing Basics<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Boxing Basics<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">8:00 AM</td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">10:00 AM</td>
-                        <td>Boxing Basics<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>Boxing Basics<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>Boxing Basics<br><small>Coach Mike</small></td>
-                        <td>Sparring Session<br><small>Coach Mike</small></td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">12:00 PM</td>
-                        <td>Lunch Hour Express<br><small>Coach Mike</small></td>
-                        <td>Lunch Hour Express<br><small>Coach Mike</small></td>
-                        <td>Lunch Hour Express<br><small>Coach Mike</small></td>
-                        <td>Lunch Hour Express<br><small>Coach Mike</small></td>
-                        <td>Lunch Hour Express<br><small>Coach Mike</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">5:00 PM</td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>Conditioning Bootcamp<br><small>Coach Mike</small></td>
-                        <td>Boxing Circuit<br><small>Coach Mike</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">6:00 PM</td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td class="class-time">7:30 PM</td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                        <td>Advanced Technique<br><small>Coach Mike</small></td>
-                        <td>Beginner Boxing<br><small>Coach Mike</small></td>
-                        <td>Open Gym<br><small>All Trainers</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="row mt-5">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Class Descriptions</h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item px-0">
-                                <h5>Beginner Boxing</h5>
-                                <p class="mb-0">Learn the fundamentals of boxing in a supportive environment. No experience necessary.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Advanced Technique</h5>
-                                <p class="mb-0">Refine your skills with advanced combinations and defensive techniques.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Conditioning Bootcamp</h5>
-                                <p class="mb-0">High-intensity training to build strength, speed, and endurance.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Boxing Circuit</h5>
-                                <p class="mb-0">Rotate through various boxing stations for a full-body workout.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Sparring Session</h5>
-                                <p class="mb-0">Supervised sparring for intermediate and advanced boxers.</p>
-                            </li>
-                        </ul>
-                    </div>
+    </section>
+
+    <!-- Секция расписания -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Еженедельное расписание</h2>
+                    <p class="lead">Найдите идеальное время для тренировки, которое соответствует вашему графику.</p>
                 </div>
             </div>
             
-            <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Class Policies</h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item px-0">
-                                <h5>Reservations</h5>
-                                <p class="mb-0">Classes can be booked up to 7 days in advance through our website or app.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Cancellations</h5>
-                                <p class="mb-0">Please cancel at least 4 hours before class to avoid a late cancellation fee.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>What to Bring</h5>
-                                <p class="mb-0">Comfortable workout clothes, water bottle, and hand wraps. We provide gloves for beginners.</p>
-                            </li>
-                            <li class="list-group-item px-0">
-                                <h5>Arrival Time</h5>
-                                <p class="mb-0">Please arrive 15 minutes before your first class for orientation.</p>
-                            </li>
-                        </ul>
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Время</th>
+                                    <th>Понедельник</th>
+                                    <th>Вторник</th>
+                                    <th>Среда</th>
+                                    <th>Четверг</th>
+                                    <th>Пятница</th>
+                                    <th>Суббота</th>
+                                    <th>Воскресенье</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="class-time">06:00 - 07:30</td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>Кардио-бокс<br><small>Анна И.</small></td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>Кардио-бокс<br><small>Анна И.</small></td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">08:00 - 09:30</td>
+                                    <td>Тренировочный лагерь<br><small>Алексей С.</small></td>
+                                    <td>Силовой бокс<br><small>Михаил П.</small></td>
+                                    <td>Тренировочный лагерь<br><small>Алексей С.</small></td>
+                                    <td>Силовой бокс<br><small>Михаил П.</small></td>
+                                    <td>Тренировочный лагерь<br><small>Алексей С.</small></td>
+                                    <td>Открытый ринг<br><small>Все тренеры</small></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">10:00 - 11:30</td>
+                                    <td>Бокс для среднего уровня<br><small>Алексей С.</small></td>
+                                    <td>Техника и тактика<br><small>Михаил П.</small></td>
+                                    <td>Бокс для среднего уровня<br><small>Алексей С.</small></td>
+                                    <td>Техника и тактика<br><small>Михаил П.</small></td>
+                                    <td>Бокс для среднего уровня<br><small>Алексей С.</small></td>
+                                    <td>Спарринг-сессии<br><small>Михаил П.</small></td>
+                                    <td>Бокс для начинающих<br><small>Анна И.</small></td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">12:00 - 13:30</td>
+                                    <td>Обеденный бокс<br><small>Анна И.</small></td>
+                                    <td>Обеденный бокс<br><small>Анна И.</small></td>
+                                    <td>Обеденный бокс<br><small>Анна И.</small></td>
+                                    <td>Обеденный бокс<br><small>Анна И.</small></td>
+                                    <td>Обеденный бокс<br><small>Анна И.</small></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">16:00 - 17:30</td>
+                                    <td>Юниорский бокс (8-12)<br><small>Алексей С.</small></td>
+                                    <td>Юниорский бокс (13-17)<br><small>Михаил П.</small></td>
+                                    <td>Юниорский бокс (8-12)<br><small>Алексей С.</small></td>
+                                    <td>Юниорский бокс (13-17)<br><small>Михаил П.</small></td>
+                                    <td>Юниорский бокс (8-17)<br><small>Анна И.</small></td>
+                                    <td>Юниорский бокс (8-17)<br><small>Алексей С.</small></td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">18:00 - 19:30</td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>Кардио-бокс<br><small>Анна И.</small></td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>Кардио-бокс<br><small>Анна И.</small></td>
+                                    <td>Бокс для начинающих<br><small>Михаил П.</small></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="class-time">19:30 - 21:00</td>
+                                    <td>Продвинутая техника<br><small>Алексей С.</small></td>
+                                    <td>Продвинутая техника<br><small>Михаил П.</small></td>
+                                    <td>Продвинутая техника<br><small>Алексей С.</small></td>
+                                    <td>Продвинутая техника<br><small>Михаил П.</small></td>
+                                    <td>Открытый ринг<br><small>Все тренеры</small></td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA Section -->
-<section class="py-5 cta">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center text-white">
-                <h2 class="mb-4">Ready to Book Your First Class?</h2>
-                <p class="lead mb-5">Try a free class and experience the Knockout difference for yourself.</p>
-                <a href="contact.html" class="btn btn-light btn-lg">Book Your Free Trial</a>
+    <!-- Секция информации о классах -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Информация о классах</h2>
+                    <p class="lead">Узнайте больше о наших различных классах и найдите тот, который подходит именно вам.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Бокс для начинающих</h4>
+                            <p class="card-text">Идеально подходит для новичков. Изучите основы бокса, включая стойку, передвижение, основные удары и защиту.</p>
+                            <p><strong>Продолжительность:</strong> 90 минут</p>
+                            <p><strong>Уровень сложности:</strong> Начинающий</p>
+                            <p><strong>Что взять с собой:</strong> Спортивная одежда, вода, полотенце. Перчатки и бинты предоставляются.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Кардио-бокс</h4>
+                            <p class="card-text">Высокоинтенсивная тренировка, сочетающая боксерские техники с кардио-упражнениями для максимального сжигания калорий.</p>
+                            <p><strong>Продолжительность:</strong> 90 минут</p>
+                            <p><strong>Уровень сложности:</strong> Средний</p>
+                            <p><strong>Что взять с собой:</strong> Спортивная одежда, вода, полотенце. Перчатки и бинты предоставляются.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Продвинутая техника</h4>
+                            <p class="card-text">Для опытных боксеров. Сосредоточьтесь на сложных комбинациях, контратаках и продвинутых защитных техниках.</p>
+                            <p><strong>Продолжительность:</strong> 90 минут</p>
+                            <p><strong>Уровень сложности:</strong> Продвинутый</p>
+                            <p><strong>Что взять с собой:</strong> Собственные перчатки и бинты рекомендуются, но не обязательны.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Спарринг-сессии</h4>
+                            <p class="card-text">Контролируемые спарринги для боксеров среднего и продвинутого уровня под наблюдением опытных тренеров.</p>
+                            <p><strong>Продолжительность:</strong> 120 минут</p>
+                            <p><strong>Уровень сложности:</strong> Средний-Продвинутый</p>
+                            <p><strong>Что взять с собой:</strong> Собственные перчатки, бинты, капа и защитное снаряжение обязательны.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Секция призыва к действию -->
+    <section class="py-5 cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="mb-4">Готовы начать свой боксерский путь?</h2>
+                    <p class="lead mb-5">Забронируйте свой первый класс сегодня и начните свое боксерское путешествие с Нокаут Лагерем.</p>
+                    <a href="contact.html" class="btn btn-light btn-lg">Забронировать класс</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Нокаут Лагерь</h5>
+                    <p>Трансформируйте свое тело и разум через дисциплину бокса. Присоединяйтесь к нашему сообществу бойцов сегодня!</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Часы работы</h5>
+                    <ul class="list-unstyled">
+                        <li>Понедельник - Пятница: 6:00 - 22:00</li>
+                        <li>Суббота: 8:00 - 20:00</li>
+                        <li>Воскресенье: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mb-4">Контакты</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Невский проспект 123, Санкт-Петербург, 190000</li>
+                        <li><i class="fas fa-phone me-2"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@нокаутлагерь.рф</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Нокаут Лагерь. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">Политика конфиденциальности</a>
+                    <a href="#" class="text-white me-3">Условия использования</a>
+                    <a href="#" class="text-white">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
