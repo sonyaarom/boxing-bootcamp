@@ -11,7 +11,7 @@
                 <h1>Наши классы</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Главная</a></li>
+                        <li class="breadcrumb-item"><a href='base.html'>Главная</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Классы</li>
                     </ol>
                 </nav>
@@ -43,7 +43,7 @@
                                 <h4 class="card-title">{{ class.name }}</h4>
                                 <p class="card-text">{{ class.description }}</p>
                                 <p class="text-muted"><i class="far fa-clock me-2"></i>{{ class.schedule }}</p>
-                                <a href="#" class="btn btn-outline-dark">Забронировать класс</a>
+                                <a href="schedule.html" class="btn btn-outline-dark">Забронировать класс</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
             <div class="col-lg-8 mx-auto text-center text-white">
                 <h2 class="mb-4">Готовы начать свой боксерский путь?</h2>
                 <p class="lead mb-5">Присоединяйтесь к нам для бесплатного пробного класса и испытайте разницу Нокаута.</p>
-                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Забронируйте бесплатную пробную тренировку</a>
+                <a href="contact.html" class="btn btn-light btn-lg">Забронируйте бесплатную пробную тренировку</a>
             </div>
         </div>
     </div>
