@@ -1,0 +1,243 @@
+/* Global Styles */
+:root {
+    --primary-color: #e63946;
+    --dark-color: #1d3557;
+    --light-color: #f1faee;
+    --secondary-color: #457b9d;
+    --tertiary-color: #a8dadc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 76px; /* For fixed navbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section - только градиент */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+    position: relative;
+    color: white;
+}
+
+/* Удалить класс no-image, так как он больше не нужен */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Уменьшил непрозрачность для лучшей видимости */
+}
+
+/* Feature Boxes */
+.feature-box {
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Class Cards */
+.class-card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.class-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.class-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: var(--dark-color);
+}
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+}
+
+.testimonial-content {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Trainer Cards */
+.trainer-card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section - только градиент */
+.cta {
+    background: linear-gradient(135deg, #e63946 0%, #1d3557 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #1d3557;
+    color: white;
+    padding: 100px 0 50px;
+    margin-bottom: 2rem;
+}
+
+/* Facility Cards */
+.facility-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.facility-card img {
+    transition: all 0.5s ease;
+}
+
+.facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.facility-card:hover img {
+    transform: scale(1.1);
+}
+
+.facility-card:hover .facility-overlay {
+    transform: translateY(0);
+}
+
+/* Value Cards */
+.value-card {
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Schedule Table */
+.schedule-table th {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.schedule-table .class-time {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+} 
