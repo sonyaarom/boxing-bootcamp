@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block title %}Наши классы - Нокаут Лагерь{% endblock %}
+
+{% block content %}
+<!-- Заголовок страницы -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Наши классы</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Классы</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция классов -->
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Найдите свой идеальный класс</h2>
+                <p class="lead">Независимо от того, являетесь ли вы полным новичком или опытным боксером, у нас есть классы, разработанные, чтобы бросить вам вызов и вдохновить вас.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            {% for class in classes %}
+            <div class="col-md-6 mb-4">
+                <div class="card class-card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='img/' + class.image) }}" class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ class.name }}">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">{{ class.name }}</h4>
+                                <p class="card-text">{{ class.description }}</p>
+                                <p class="text-muted"><i class="far fa-clock me-2"></i>{{ class.schedule }}</p>
+                                <a href="#" class="btn btn-outline-dark">Забронировать класс</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Секция преимуществ -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Преимущества боксерских тренировок</h2>
+                <p class="lead">Бокс - это не просто спорт, это полная система физической и ментальной подготовки.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Кардио-выносливость</h4>
+                        <p>Улучшите свою сердечно-сосудистую выносливость через интенсивные интервальные тренировки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Полная сила тела</h4>
+                        <p>Развивайте функциональную силу в руках, корпусе, спине и ногах через динамичные движения.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Ментальный фокус</h4>
+                        <p>Улучшите концентрацию, время реакции и ментальную устойчивость через боксерские тренировки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция призыва к действию -->
+<section class="py-5 cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="mb-4">Готовы начать свой боксерский путь?</h2>
+                <p class="lead mb-5">Присоединяйтесь к нам для бесплатного пробного класса и испытайте разницу Нокаута.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Забронируйте бесплатную пробную тренировку</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 

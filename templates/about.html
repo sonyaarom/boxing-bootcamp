@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+
+{% block title %}О нас - Нокаут Лагерь{% endblock %}
+
+{% block content %}
+<!-- Заголовок страницы -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>О нас</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">О нас</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция нашей истории -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                <div class="about-image-placeholder p-5 bg-light rounded shadow">
+                    <i class="fas fa-dumbbell fa-5x text-danger"></i>
+                    <h4 class="mt-3">Наш зал</h4>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title">Наша история</h2>
+                <p class="lead">Основан в 2022 году начинающим боксером Славой "Супер" Петровым, наш лагерь начался как небольшой общественный зал с большим видением.</p>
+                <p>После завершения своей любительской карьеры, Слава хотел поделиться своей страстью к боксу и его преобразующей силой с другими. То, что начиналось как персональные тренировки в небольшом складе, выросло в один из лучших боксерских фитнес-центров города.</p>
+                <p>Сегодня Нокаут Лагерь обслуживает сотни участников из всех слоев общества, от полных новичков до любительских соревнующихся. Наша миссия остается прежней: дать людям силу через дисциплину, силу и уверенность, которые дает бокс.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция нашей философии -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-title">Наша философия</h2>
+                <p class="lead">Мы верим в преобразующую силу бокса как физической дисциплины и ментальной практики.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="philosophy-icon mb-3">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <h4>Дисциплина</h4>
+                        <p>Бокс учит ценности постоянной практики, преданности и появления для себя день за днем.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="philosophy-icon mb-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Ментальная сила</h4>
+                        <p>Помимо физической формы, мы фокусируемся на построении ментальной устойчивости, фокуса и способности преодолевать вызовы.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="philosophy-icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Сообщество</h4>
+                        <p>Мы создаем поддерживающую среду, где люди всех уровней могут учиться, расти и праздновать успехи друг друга.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция объекта -->
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-title">Наш объект</h2>
+                <p class="lead">Наш объект площадью 1000 квадратных метров оборудован всем необходимым для полного боксерского тренировочного опыта.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="facility-icon mb-3">
+                        <i class="fas fa-ring fa-3x text-danger"></i>
+                    </div>
+                    <h4>Боксерский ринг</h4>
+                    <p>Профессиональный боксерский ринг для тренировок и спаррингов.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="facility-icon mb-3">
+                        <i class="fas fa-dumbbell fa-3x text-danger"></i>
+                    </div>
+                    <h4>Зона тяжелых мешков</h4>
+                    <p>Более 20 тяжелых мешков различных весов и стилей для тренировки техники.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="facility-icon mb-3">
+                        <i class="fas fa-bicycle fa-3x text-danger"></i>
+                    </div>
+                    <h4>Кардио зона</h4>
+                    <p>Современное кардио-оборудование для разминки и кондиционирования.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="facility-icon mb-3">
+                        <i class="fas fa-weight fa-3x text-danger"></i>
+                    </div>
+                    <h4>Зона силовых тренировок</h4>
+                    <p>Свободные веса и тренажеры для развития боксерской силы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция наших ценностей -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-6 mx-auto text-center">
+                <h2 class="section-title">Наши ценности</h2>
+                <p class="lead">Эти принципы определяют все, что мы делаем в Нокаут Лагере.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="value-card bg-white rounded shadow-sm">
+                    <h4>Инклюзивность</h4>
+                    <p>Мы приветствуем людей всех возрастов, происхождений и уровней физической подготовки. Бокс для всех.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-card bg-white rounded shadow-sm">
+                    <h4>Уважение</h4>
+                    <p>Мы воспитываем культуру взаимного уважения между тренерами, членами и персоналом.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-card bg-white rounded shadow-sm">
+                    <h4>Совершенство</h4>
+                    <p>Мы стремимся к совершенству во всем, от наших тренировочных программ до обслуживания клиентов.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="value-card bg-white rounded shadow-sm">
+                    <h4>Рост</h4>
+                    <p>Мы верим в постоянное улучшение и помогаем нашим членам расти физически и ментально.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция призыва к действию -->
+<section class="py-5 cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h2 class="mb-4">Готовы присоединиться к нашему сообществу?</h2>
+                <p class="lead mb-5">Испытайте разницу Нокаута с бесплатным пробным занятием. Без давления, без обязательств.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Забронируйте бесплатную пробную тренировку</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
