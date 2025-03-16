@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты - Нокаут Лагерь{% endblock %}
+
+{% block content %}
+<!-- Заголовок страницы -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Контакты</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ url_for('home') }}">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контактная секция -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="lead mb-4">Есть вопросы о наших классах или вариантах членства? Мы здесь, чтобы помочь!</p>
+                
+                <div class="contact-info mb-5">
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h5>Наше местоположение</h5>
+                            <p class="mb-0">Невский проспект 123, Санкт-Петербург, 190000</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5>Телефон</h5>
+                            <p class="mb-0">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="feature-icon me-3">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p class="mb-0">info@нокаутлагерь.рф</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="feature-icon me-3">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5>Часы работы</h5>
+                            <p class="mb-0">Понедельник - Пятница: 6:00 - 22:00<br>
+                            Суббота: 8:00 - 20:00<br>
+                            Воскресенье: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-media mb-5">
+                    <h5>Следите за нами</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4">Отправьте нам сообщение</h4>
+                        <form action="{{ url_for('contact') }}" method="post">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Тема</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Сообщение</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-danger btn-lg">Отправить сообщение</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция бесплатной пробной тренировки -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-title">Забронируйте бесплатную пробную тренировку</h2>
+                <p class="lead mb-4">Испытайте разницу Нокаута с бесплатным занятием. Без давления, без обязательств.</p>
+                <a href="#" class="btn btn-danger btn-lg">Забронировать сейчас</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
